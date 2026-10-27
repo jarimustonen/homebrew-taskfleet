@@ -1,19 +1,19 @@
 class Taskfleet < Formula
   desc "Taskfleet CLI for orchestrating AI-agent workflows on a developer's machine."
   homepage "https://github.com/jarimustonen/taskfleet"
-  version "0.17.1"
+  version "0.17.3"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/jarimustonen/taskfleet/releases/download/v0.17.1/taskfleet-aarch64-apple-darwin.tar.xz"
-    sha256 "8a5ca59db0a9ab00185724e0bb8615f4c8e372ebdc5af8d3032e80f4d041835e"
+    url "https://github.com/jarimustonen/taskfleet/releases/download/v0.17.3/taskfleet-aarch64-apple-darwin.tar.xz"
+    sha256 "858ee6725bb035727fc0782af142d09e5c0101d2bb9f29ab19a957f4826471bd"
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/jarimustonen/taskfleet/releases/download/v0.17.1/taskfleet-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "7340da3cc8b9c98b53e902a526a38b67a4b9cab7f94372e098e6a04f05894374"
+      url "https://github.com/jarimustonen/taskfleet/releases/download/v0.17.3/taskfleet-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "f36e8e99329499c25aaafdb50c3a31f7db499d942948e43708989457f4ced1b8"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jarimustonen/taskfleet/releases/download/v0.17.1/taskfleet-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "3a96ddf39426fd42aa926b2b4ff635ceb0932988719a0598ce956f185fd238bc"
+      url "https://github.com/jarimustonen/taskfleet/releases/download/v0.17.3/taskfleet-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "1ec2578255efbce29297424b1a5dff1ad90d72582e132559d253805e29e7f5d3"
     end
   end
   license "MIT"
